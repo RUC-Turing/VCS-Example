@@ -9,4 +9,4 @@
 # -sverilog: 支持 SystemVerilog 语法
 # +incdir+src: 在 src 里面寻找 include 文件
 # -override_timescale=1ns/1ps: 强制将 timescale 设为 1ns/1ps
-vcs -full64 src/*.v -o sim/simv -fsdb -kdb -q +incdir+src -sverilog -override_timescale=1ns/1ps
+vcs -full64 src/*.{v,sv} -o sim/simv -fsdb -kdb -q +incdir+src -sverilog -override_timescale=1ns/1ps
